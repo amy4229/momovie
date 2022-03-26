@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>vanilla js</title>
+  </head>
+  <body>
+    <span id="label">TotalCLick: 0</span>
+    <button id="button">Click me</button>
+  </body>
+  <script>
+    let cnt = 0;
+    const button = document.getElementById("button");
+    const label = document.getElementById("label");
+
+    function handleClick(){
+        cnt+=1;
+        label.innerText=`TotalCLick: ${cnt}`;
+    }
+    button.addEventListener("click",handleClick);
+  </script>
+</html>
